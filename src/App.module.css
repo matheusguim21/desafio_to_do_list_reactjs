@@ -1,0 +1,103 @@
+.header{
+  display: flex;
+  background-color: var(--gray-700);
+  height: 12.5rem ;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+
+}
+body{
+  background-color: var(--gray-600);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.addbox{
+  margin-top: -1.5rem;
+  display: flex;
+  width:46rem;
+  height: 3rem;
+  background-color: transparent;
+  gap: 0.5rem ;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.input{
+  width: 85%;
+  height: 3.375rem;
+  border-radius: 8px;
+  background-color: var(--gray-400);
+  border: none;
+  padding: 0 2rem;
+  color: var(--gray-200);
+  font-size: 400;
+  font-family: "Inter";
+
+
+}
+.input::placeholder{
+  line-height: 140%;
+  font-size: 1rem;
+
+}
+.input:focus{
+  outline: 1px solid var(--purple-dark);
+}
+.createButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  width: 12%;
+  background-color: var(--blue-dark);
+  height: 3.375rem;
+  border-radius: 8px;
+  border: none;
+}
+.createButton:hover{
+  background-color: var(--blue);
+}
+.createButton:active{
+  background-color: var(--blue-dark)
+}
+.createText{
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--gray-100);
+
+}
+.addIcon{
+  color: var(--gray-100);
+  font-size: 1.2rem;
+  
+}
+.taskBox{
+  display: flex;
+  flex-direction: column;
+  width: 46rem;
+  flex: 1;
+  border: 1px solid var(--purple-dark);
+}
+.tasksCount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.createdTasks{
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.createdTasks span{
+  background-color: var(--gray-300);
+  border-radius:10px;
+}
