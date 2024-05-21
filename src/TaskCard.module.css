@@ -1,0 +1,112 @@
+.taskCard{
+  width: 46rem;
+  height: 4.5rem;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.taskContent {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Descomentei e adicionei */
+}
+
+.taskContent p {
+  line-height: 140%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; /* Adicionado */
+  color: var(--gray-200);
+}
+.taskContentCheked  {
+  text-decoration: line-through;
+  line-height: 140%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; /* Adicionado */
+  color: var(--gray-200);
+}
+
+.trashIcon{
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--gray-300);
+
+
+}
+.trashIcon:hover{
+  fill: var(--danger);
+  cursor: pointer;
+}
+
+
+
+
+/* RoundedCheckbox.css */
+
+.rounded-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rounded-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  justify-content:center ;
+  align-items: center;
+  background-color:transparent;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  transition: background-color 0.3s ease;
+  margin-right: 8px;
+  position: relative;
+}
+
+
+.rounded-checkbox input:checked + .checkmark {
+  background-color: var(--purple-dark);
+  border: none;
+}
+
+.checkmark:after {
+  position: absolute;
+  display: none;
+}
+
+.rounded-checkbox input:checked + .checkmark:after {
+  display: block;
+}
+
+.rounded-checkbox .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+}
+
+.checkbox-label {
+  font-size: 16px;
+}
+
+.checkedIcon{
+  margin-right: -0.1rem;
+  width: 65%;
+  height: 65%;
+}
