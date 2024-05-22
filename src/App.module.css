@@ -9,7 +9,6 @@
 
 body{
   background-color: var(--gray-600);
-  overflow: hidden;
 }
 main{
   display: flex;
@@ -166,6 +165,7 @@ section{
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   flex: 1;
+  gap: 1rem;
   min-height: 30rem;
   background-color: transparent;
   

@@ -30,10 +30,10 @@ function App() {
   const [doneTasks,setDoneTasks] = useState(0)
 
   const taskSchema = z.object({
-    task: z.string({message:"Você precisa preencher o campo"})
+    task: z.string({message:"Você precisa preencher o campo"}).min(1, {message:"Você precisa preencher o campo"})
   })
 
-  const {control, handleSubmit, formState:{errors}} = useForm<FormData>({
+  const {control, handleSubmit, formState:{errors},setValue} = useForm<FormData>({
     resolver: zodResolver(taskSchema)
   })
 
@@ -50,7 +50,8 @@ function App() {
       id:crypto.randomUUID(),
       isDone:false
     }])
-    
+    setValue("task", "")
+   
   }
   
   const handleTaskStatusChange = (taskId:string, isDone:boolean)=>{
